@@ -144,9 +144,11 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
   this.bestContainer.textContent = bestScore;
 };
 
+$_image = new Image();
+$_image.src = '../tile-sets/udacity/dou.jpg';
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You win!" : "Game over!";
+  var message = won ? "You win!" : "Dou!";
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
