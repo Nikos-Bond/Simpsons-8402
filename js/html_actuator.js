@@ -148,7 +148,7 @@ $_image = new Image();
 $_image.src = '../tile-sets/udacity/dou.jpg';
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You win!" : "Dou!";
+  var message = won ? "Nuclear war is started!" : "Dou!";
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
